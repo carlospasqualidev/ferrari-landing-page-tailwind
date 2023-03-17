@@ -1,4 +1,5 @@
 import { Collezione, Home, Subjects, Articles, News } from '@/templates';
+import { Video } from '@/templates/Video';
 
 export default function Root() {
   return (
@@ -15,7 +16,13 @@ export default function Root() {
       <section id="articles" className="px-12">
         <Articles />
       </section>
-      <section id="articles" className="px-12">
+      <section id="video" className="px-12">
+        <Video />
+      </section>
+      <section id="news" className="px-12">
+        <News />
+      </section>
+      <section id="news" className="px-12">
         <News />
       </section>
     </div>

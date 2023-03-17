@@ -4,6 +4,7 @@ import FerrariImage1 from './svgs/ferrari_1.svg';
 import FerrariRoma from './svgs/ferrari_roma.svg';
 import Italy from './svgs/italy.svg';
 import Arrow from './svgs/arrow.svg';
+import ArrowWhite from './svgs/arrow_white.svg';
 import Collezione from './svgs/collezione.svg';
 import FerrariMouseum from './svgs/ferrari_mouseum.svg';
 import SnowAngels from './svgs/snow_angels.svg';
@@ -18,6 +19,7 @@ export const svgs = {
   Italy,
   FerrariRoma,
   Arrow,
+  ArrowWhite,
   Collezione,
   FerrariMouseum,
   SnowAngels,

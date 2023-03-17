@@ -12,7 +12,7 @@ export function Subjects() {
           className="absolute pointer-events-none z-10 -right-12  "
         />
 
-        <h1 className="text-[#FCFCFC] text-[362px] absolute w-full pl-28 -top-32 pointer-events-none">
+        <h1 className="text-[#FCFCFC] text-[362px] absolute w-full pl-28 -top-32 pointer-events-none font-bold">
           ROMA
         </h1>
         <div className=" z-20 h-full absolute p-12 flex flex-col gap-4">

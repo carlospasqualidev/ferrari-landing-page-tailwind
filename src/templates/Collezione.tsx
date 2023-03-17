@@ -7,7 +7,7 @@ export function Collezione() {
       <Image
         src={svgs.Collezione}
         alt=""
-        className="h-[540px] object-cover w-full "
+        className="h-[540px] object-cover w-full pointer-events-none "
       />
 
       <h3 className="text-4xl absolute w-[500px] text-center text-[#FCFCFC] font-bold">
