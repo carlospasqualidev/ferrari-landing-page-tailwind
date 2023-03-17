@@ -1,6 +1,27 @@
 import Image from 'next/image';
 import { svgs } from '@/assets';
-import { ArrowButton } from '@/components';
+import { ArrowButton, NewsCard } from '@/components';
+
+const newsData = [
+  {
+    hours: '03',
+    title: 'CHARLES AND CARLOS BAG THE SECOND',
+    description:
+      'When the Bahrain Grand Prix gets underway tomorrow at 6pm at the Sakhir circuit, Charles Leclerc and Carlos Sainz will be starting from the second row.',
+  },
+  {
+    hours: 'O7 MAR',
+    title: 'THE FERRARI 499P DEBUTS AT THE 1000 ROUND OF THE FIA WEC',
+    description:
+      'The countdown is over, and half a century of waiting is coming to an end. Ferrari is returning to the top class of the FIA World Endurance Championship, after fifty years since its last...',
+  },
+  {
+    hours: 'O6 MAR',
+    title: 'FERRARI 488 GTES AT SEBRING FOR THE FIRST ROUND OF THE FIA WEC',
+    description:
+      'When the Bahrain Grand Prix gets underway tomorrow at 6pm at the Sakhir circuit, Charles Leclerc and Carlos Sainz will be starting from the second row.',
+  },
+];
 
 export function F1() {
   return (
@@ -52,26 +73,6 @@ export function SF90() {
   );
 }
 
-interface INewsCard {
-  hours: string;
-  title: string;
-  description: string;
-}
-
-export function NewsCard({ hours, title, description }: INewsCard) {
-  return (
-    <div className="w-[375px] flex flex-col gap-2">
-      <h6 className="text-lg text-[#999999]">{hours}</h6>
-
-      <h6 className="text-lg font-bold">{title}</h6>
-
-      <p>{description}</p>
-
-      <ArrowButton />
-    </div>
-  );
-}
-
 export function News() {
   return (
     <div className="flex flex-col gap-10">
@@ -82,6 +83,8 @@ export function News() {
 
         <SF90 />
       </div>
+
+      <NewsCard newsData={newsData} />
     </div>
   );
 }

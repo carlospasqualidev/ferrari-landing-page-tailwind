@@ -22,9 +22,6 @@ export default function Root() {
       <section id="news" className="px-12">
         <News />
       </section>
-      <section id="news" className="px-12">
-        <News />
-      </section>
     </div>
   );
 }

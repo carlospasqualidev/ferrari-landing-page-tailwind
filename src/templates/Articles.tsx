@@ -31,7 +31,7 @@ const articlesData = [
 export function Articles() {
   return (
     <div className="">
-      <div className="flex gap-8  overflow-x-auto pb-4">
+      <div className="flex gap-8 overflow-x-auto pb-4">
         {articlesData.map((article) => (
           <ArticleCard
             key={article.title}
