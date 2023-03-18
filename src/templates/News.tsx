@@ -37,7 +37,7 @@ export function F1() {
           retirement at two thirds distance, when he was a comfortable third.
         </p>
 
-        <ArrowButton variant="white" />
+        <ArrowButton label="Scoprire" variant="white" />
       </div>
       <Image
         src={svgs.F1}
@@ -55,7 +55,7 @@ export function SF90() {
       <Image
         src={svgs.FerrariSF90}
         alt=""
-        className="absolute -right-12 bottom-0 z-10"
+        className="absolute -right-12 bottom-0 z-10 pointer-events-none"
       />
 
       <h1 className="text-[#ffffff] font-bold pointer-events-none text-[362px] absolute -top-[130px] -right-12">
@@ -67,7 +67,7 @@ export function SF90() {
           SCOPRI LA SF90 STRADALE
         </h3>
 
-        <ArrowButton />
+        <ArrowButton label="Scoprire" />
       </div>
     </div>
   );
@@ -76,7 +76,7 @@ export function SF90() {
 export function News() {
   return (
     <div className="flex flex-col gap-10">
-      <h3 className="text-4xl font-bold ">News</h3>
+      <h3 className="text-4xl font-bold">News</h3>
 
       <div className="flex gap-8">
         <F1 />

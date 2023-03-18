@@ -19,7 +19,7 @@ export function ArticleCard({ image, title, description }: IArticle) {
       <h4 className="text-2xl mb-2 font-bold">{title}</h4>
       <p className="text-sm mb-10 h-[50px]">{description}</p>
 
-      <ArrowButton />
+      <ArrowButton label="Scoprire" />
     </div>
   );
 }

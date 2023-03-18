@@ -23,7 +23,7 @@ export function Subjects() {
             Casa di Maranello.
           </p>
 
-          <ArrowButton />
+          <ArrowButton label="Scoprire" />
         </div>
       </div>
     </div>

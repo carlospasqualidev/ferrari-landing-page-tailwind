@@ -1,5 +1,12 @@
-import { Collezione, Home, Subjects, Articles, News } from '@/templates';
-import { Video } from '@/templates/Video';
+import {
+  Collezione,
+  Home,
+  Subjects,
+  Articles,
+  News,
+  Contact,
+  Video,
+} from '@/templates';
 
 export default function Root() {
   return (
@@ -21,6 +28,12 @@ export default function Root() {
       </section>
       <section id="news" className="px-12">
         <News />
+      </section>
+      <section id="contact" className="px-12">
+        <Contact />
+      </section>
+      <section id="contact" className="px-12">
+        <Contact />
       </section>
     </div>
   );

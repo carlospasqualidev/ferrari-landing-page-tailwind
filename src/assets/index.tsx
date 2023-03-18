@@ -1,6 +1,7 @@
 //SVGS
 import FerrariLogo from './svgs/ferrari_logo.svg';
 import FerrariImage1 from './svgs/ferrari_1.svg';
+import FerrariImage2 from './svgs/ferrari_2.svg';
 import FerrariRoma from './svgs/ferrari_roma.svg';
 import Italy from './svgs/italy.svg';
 import Arrow from './svgs/arrow.svg';
@@ -16,6 +17,7 @@ export const images = {};
 export const svgs = {
   FerrariLogo,
   FerrariImage1,
+  FerrariImage2,
   Italy,
   FerrariRoma,
   Arrow,

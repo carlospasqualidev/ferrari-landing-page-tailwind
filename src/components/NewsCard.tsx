@@ -20,7 +20,7 @@ export function NewsCard({ newsData }: INewsCard) {
                 {news.title}
               </h6>
               <p className="text-sm">{news.description}</p>
-              <ArrowButton />
+              <ArrowButton label="Scoprire" />
             </div>
 
             {newsData.length - 1 > i && (
