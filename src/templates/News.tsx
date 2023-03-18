@@ -66,8 +66,9 @@ export function SF90() {
         <h3 className="text-black font-bold text-4xl z-30">
           SCOPRI LA SF90 STRADALE
         </h3>
-
-        <ArrowButton label="Scoprire" />
+        <div className="z-10">
+          <ArrowButton label="Scoprire" />
+        </div>
       </div>
     </div>
   );

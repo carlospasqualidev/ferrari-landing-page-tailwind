@@ -3,27 +3,44 @@ import { svgs } from '@/assets';
 
 interface IArrowButton {
   label: string;
+  width?: string;
+  widthForAnim?: string;
   variant?: 'white';
+  selected?: boolean;
+  onClick?: () => void;
 }
 
-export function ArrowButton({ variant, label }: IArrowButton) {
+export function ArrowButton({
+  selected,
+  variant,
+  label,
+  width = 'w-[95px]',
+  widthForAnim = 'hover:w-[105px]',
+  onClick,
+}: IArrowButton) {
   return (
-    <div className="flex gap-3 items-center relative">
+    <div
+      onClick={onClick}
+      className={`${
+        selected ? `${widthForAnim}` : `${width} hover:${widthForAnim}`
+      }
+      flex justify-between gap-3 transition-all ease-in cursor-pointer`}
+    >
       <p
-        className={`${
-          variant === 'white' ? 'text-white' : 'text-black'
-        } text-base text-black`}
+        className={`${variant === 'white' ? 'text-white ' : 'text-black'} 
+          ${selected && 'border-b-[1px]'}
+
+
+        text-base`}
       >
         {label}
       </p>
 
-      <div className="absolute pl-[72px] hover:pl-[80px] transition-all ease-in cursor-pointer">
-        {variant === 'white' ? (
-          <Image src={svgs.ArrowWhite} alt="" />
-        ) : (
-          <Image src={svgs.Arrow} alt="" />
-        )}
-      </div>
+      {variant === 'white' ? (
+        <Image src={svgs.ArrowWhite} alt="" />
+      ) : (
+        <Image src={svgs.Arrow} alt="" />
+      )}
     </div>
   );
 }

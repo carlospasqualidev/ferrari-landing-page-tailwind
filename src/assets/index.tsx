@@ -11,6 +11,7 @@ import FerrariMouseum from './svgs/ferrari_mouseum.svg';
 import SnowAngels from './svgs/snow_angels.svg';
 import FerrariSF90 from './svgs/ferrari_sf90.svg';
 import F1 from './svgs/f1.svg';
+import RoundButton from './svgs/round_button.svg';
 
 export const images = {};
 
@@ -27,4 +28,5 @@ export const svgs = {
   SnowAngels,
   FerrariSF90,
   F1,
+  RoundButton,
 };

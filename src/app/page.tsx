@@ -6,6 +6,7 @@ import {
   News,
   Contact,
   Video,
+  Footer,
 } from '@/templates';
 
 export default function Root() {
@@ -32,8 +33,8 @@ export default function Root() {
       <section id="contact" className="px-12">
         <Contact />
       </section>
-      <section id="contact" className="px-12">
-        <Contact />
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );

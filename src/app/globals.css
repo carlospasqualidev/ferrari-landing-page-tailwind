@@ -19,21 +19,18 @@ body{
    
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #424242;
-  border-radius: 10px;
+  background: #2B2B2B;
 
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6e6e6e;
-  border-radius: 10px;
-
+  background: #d6d6d6;
   }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+    background: #F1F1F1;
   }
 
   

@@ -5,3 +5,4 @@ export { Articles } from './Articles';
 export { Video } from './Video';
 export { News } from './News';
 export { Contact } from './Contact';
+export { Footer } from './Footer';
