@@ -21,9 +21,7 @@ export function ArrowButton({
   return (
     <div
       onClick={onClick}
-      className={`${
-        selected ? `${widthForAnim}` : `${width} hover:${widthForAnim}`
-      }
+      className={`${selected ? `${width}` : `${width} ${widthForAnim}`}
       flex justify-between gap-3 transition-all ease-in cursor-pointer`}
     >
       <p
