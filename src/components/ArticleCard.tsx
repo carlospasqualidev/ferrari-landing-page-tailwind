@@ -9,7 +9,7 @@ interface IArticle {
 
 export function ArticleCard({ image, title, description }: IArticle) {
   return (
-    <div className="flex flex-col w-[575px] min-w-[400px]">
+    <div className="flex flex-col w-[575px] min-w-[400px] max-md:min-w-full px-6">
       <Image
         src={image}
         alt=""
@@ -17,9 +17,11 @@ export function ArticleCard({ image, title, description }: IArticle) {
       />
 
       <h4 className="text-2xl mb-2 font-bold">{title}</h4>
-      <p className="text-sm mb-10 h-[50px]">{description}</p>
+      <p className="text-sm h-[50px]">{description}</p>
 
-      <ArrowButton label="Scoprire" />
+      <div className="mt-20">
+        <ArrowButton label="Scoprire" />
+      </div>
     </div>
   );
 }

@@ -15,22 +15,22 @@ export default function Root() {
       <section id="home" className="h-screen">
         <Home />
       </section>
-      <section id="subjects" className="px-12">
+      <section id="subjects" className="px-12 max-md:px-6">
         <Subjects />
       </section>
-      <section id="collezione" className="px-12">
+      <section id="collezione" className="px-12 max-md:px-6">
         <Collezione />
       </section>
-      <section id="articles" className="px-12">
+      <section id="articles" className="px-12 max-md:px-0">
         <Articles />
       </section>
-      <section id="video" className="px-12">
+      <section id="video" className="px-12 max-md:px-6">
         <Video />
       </section>
-      <section id="news" className="px-12">
+      <section id="news" className="px-12 max-md:px-6">
         <News />
       </section>
-      <section id="contact" className="px-12">
+      <section id="contact" className="px-12 max-md:px-6">
         <Contact />
       </section>
       <section id="footer">

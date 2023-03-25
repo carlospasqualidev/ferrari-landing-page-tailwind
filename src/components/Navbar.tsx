@@ -30,7 +30,7 @@ export function Navbar() {
   const [selectedOption, setSelectedOption] = useState('HOME');
 
   return (
-    <div className="flex h-16 justify-between px-12 py-7 items-center absolute w-full z-50 ">
+    <div className="flex h-16 justify-between px-12 py-7 items-center absolute w-full z-50 max-md:px-6">
       <p
         className="text-[#FCFCFC] font-bold cursor-pointer"
         onClick={() => setMenuOpen((prevState) => !prevState)}
@@ -44,9 +44,13 @@ export function Navbar() {
         <div
           className={`${
             menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          } left-4 top-16 absolute bg-[#2B2B2B] p-12 flex transition-all ease-in rounded`}
+          } left-4 top-16 absolute bg-[#2B2B2B] p-12 flex transition-all ease-in rounded max-md:left-0 max-md:top-0 max-md:w-full max-md:h-screen max-md:rounded-none`}
         >
-          <div className="flex flex-col gap-8 w-[200px] py-6">
+          <div className="absolute right-12 hidden max-md:flex ">
+            <RoundButton onClick={() => setMenuOpen(false)} />
+          </div>
+
+          <div className="flex flex-col gap-8 w-[200px] py-6 max-md:w-full max-md:items-center max-md:justify-center">
             {linksData.map((link) => (
               <ArrowButton
                 key={link.label}
@@ -62,10 +66,10 @@ export function Navbar() {
             ))}
           </div>
           <div>
-            <div className="w-[1px] h-full bg-[#FCFCFC]" />
+            <div className="w-[1px] h-full bg-[#FCFCFC] max-md:hidden" />
           </div>
 
-          <div className="flex flex-col gap-3 p-8">
+          <div className="flex flex-col gap-3 p-8 max-md:hidden">
             {externalLinksData.map((externalLinks) => (
               <p
                 className="font-bold text-base text-[#FCFCFC]"
@@ -76,7 +80,9 @@ export function Navbar() {
             ))}
           </div>
 
-          <RoundButton onClick={() => setMenuOpen(false)} />
+          <div className="max-md:hidden">
+            <RoundButton onClick={() => setMenuOpen(false)} />
+          </div>
         </div>
       }
     </div>

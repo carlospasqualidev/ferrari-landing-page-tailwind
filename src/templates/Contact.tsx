@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { svgs } from '@/assets';
+import { images, svgs } from '@/assets';
 import { ArrowButton } from '@/components';
 
 export interface ICheckbox {
@@ -17,24 +17,24 @@ function Checkbox({ label }: ICheckbox) {
 
 export const Contact = () => {
   return (
-    <div className="w-full bg-[#F6F6F6] h-[540px] flex flex-col relative p-8 items-end gap-16">
+    <div className="w-full bg-[#F6F6F6] h-[540px] flex flex-col relative p-8 items-end gap-16 max-md:h-fit">
       <Image
         src={svgs.FerrariImage2}
         alt=""
         sizes=""
-        className=" -left-[48px] absolute pointer-events-none bottom-14"
+        className=" -left-[48px] absolute pointer-events-none bottom-14 max-md:hidden"
       />
 
-      <h3 className="text-4xl font-bold w-full flex justify-end ">
+      <h3 className="text-4xl font-bold w-full flex justify-end max-md:text-center">
         VUOI RICEVERE LE NEWSLETTER FERRARI?
       </h3>
 
-      <div className="flex flex-col w-1/2 gap-9">
+      <div className="flex flex-col w-1/2 gap-9 max-md:w-full">
         <h6 className="text-[#999999]">EMAIL</h6>
         <input className="w-full bg-transparent border-b-2 border-solid border-[#2B2B2B] outline-none" />
 
         <h6 className="text-lg font-bold w-full flex">
-          VUOI RICEVERE LE NEWSLETTER FERRARI?
+          Scegli le newsletter che vuoi ricevere
         </h6>
 
         <div className="grid grid-cols-2 gap-6">
@@ -45,6 +45,12 @@ export const Contact = () => {
         </div>
         <ArrowButton label="Inscrivit" />
       </div>
+      <Image
+        src={images.FerrariImage2Mobile}
+        alt=""
+        sizes=""
+        className=" hidden max-md:flex -mt-32"
+      />
     </div>
   );
 };

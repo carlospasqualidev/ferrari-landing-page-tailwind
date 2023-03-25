@@ -21,11 +21,17 @@ const newsData = [
     description:
       'When the Bahrain Grand Prix gets underway tomorrow at 6pm at the Sakhir circuit, Charles Leclerc and Carlos Sainz will be starting from the second row.',
   },
+  {
+    hours: '03',
+    title: 'CHARLES AND CARLOS BAG THE SECOND',
+    description:
+      'When the Bahrain Grand Prix gets underway tomorrow at 6pm at the Sakhir circuit, Charles Leclerc and Carlos Sainz will be starting from the second row.',
+  },
 ];
 
 export function F1() {
   return (
-    <div className="min-w-[320px] ">
+    <div className="min-w-[320px] relative">
       <div className="absolute p-6">
         <h4 className="font-bold text-[#FCFCFC] mb-1">
           CARLOS FOURTH, CHARLES RETIRES
@@ -58,11 +64,11 @@ export function SF90() {
         className="absolute -right-12 bottom-0 z-10 pointer-events-none"
       />
 
-      <h1 className="text-[#ffffff] font-bold pointer-events-none text-[362px] absolute -top-[130px] -right-12">
+      <h1 className="text-[#ffffff] font-bold pointer-events-none text-[300px] absolute -top-[100px] -right-12 max-md:hidden">
         SF90
       </h1>
 
-      <div className="bg-[#F6F6F6] flex flex-col p-8 h-full">
+      <div className="bg-[#F6F6F6] flex flex-col p-8 h-full max-md:min-w-[350px]">
         <h3 className="text-black font-bold text-4xl z-30">
           SCOPRI LA SF90 STRADALE
         </h3>
@@ -76,10 +82,10 @@ export function SF90() {
 
 export function News() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 ">
       <h3 className="text-4xl font-bold">News</h3>
 
-      <div className="flex gap-8">
+      <div className="flex gap-8 max-md:overflow-x-auto max-md:pb-6">
         <F1 />
 
         <SF90 />

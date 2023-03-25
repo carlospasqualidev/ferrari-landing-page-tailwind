@@ -7,10 +7,16 @@ export function Collezione() {
       <Image
         src={svgs.Collezione}
         alt=""
-        className="h-[540px] object-cover w-full pointer-events-none "
+        className="h-[540px] object-cover w-full pointer-events-none max-md:hidden"
       />
 
-      <h3 className="text-4xl absolute w-[500px] text-center text-[#FCFCFC] font-bold">
+      <Image
+        src={svgs.Collezione}
+        alt=""
+        className="h-[540px] object-cover w-full pointer-events-none hidden max-md:flex"
+      />
+
+      <h3 className="text-4xl absolute w-[500px] text-center text-[#FCFCFC] font-bold max-md:w-[300px]">
         NUOVA COLLEZIONE PRIMAVERA-ESTANTE 2023
       </h3>
     </div>

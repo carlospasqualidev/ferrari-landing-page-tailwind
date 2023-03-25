@@ -38,8 +38,8 @@ const linksData = [
 
 export function Footer() {
   return (
-    <div className="h-[365px] bg-[#2B2B2B] p-20 flex flex-col gap-6">
-      <p className="text-[#999999] text-base text-center">
+    <div className="h-[365px] bg-[#2B2B2B] p-20 flex flex-col gap-6 max-md:h-fit max-md:p-6">
+      <p className="text-[#999999] text-base text-center ">
         Ferrari N.V. - Società capogruppo - Società di diritto olandese con
         official seat ad Amsterdam, Paesi Bassi e indirizzo in via Abetone
         Inferiore n. 4, I-41053 Maranello (MO), Italia, iscrizione al Registro
@@ -55,7 +55,7 @@ export function Footer() {
         Copyright 2023 - All rights reserved
       </p>
 
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center items-center gap-4 max-md:grid max-md:grid-cols-2">
         {linksData.map((link) => (
           <p
             key={link.label}
@@ -64,9 +64,12 @@ export function Footer() {
             {link.label}
           </p>
         ))}
-        <div className="ml-14">
+        <div className="ml-14 max-md:hidden">
           <Language />
         </div>
+      </div>
+      <div className="hidden w-full justify-center max-md:flex ">
+        <Language />
       </div>
     </div>
   );

@@ -4,11 +4,13 @@
 
 *{
     scroll-behavior: smooth;     
+  /* border: 1px solid greenyellow; */
+
 }
 
 body{
   background-color: #ffffff;
-  color:#2B2B2B
+  color:#2B2B2B;
 }
 
 /* width */
