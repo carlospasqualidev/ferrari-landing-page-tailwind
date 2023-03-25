@@ -1,4 +1,4 @@
-import { svgs } from '@/assets';
+import { images } from '@/assets';
 import Image from 'next/image';
 import { ArrowButton } from '@/components';
 
@@ -7,12 +7,12 @@ export function Subjects() {
     <div>
       <div className="w-full h-[540px] bg-[#F6F6F6] relative">
         <Image
-          src={svgs.FerrariRoma}
+          src={images.FerrariRoma}
           alt=""
           className="absolute pointer-events-none z-10 -right-12 max-md:hidden"
         />
         <Image
-          src={svgs.FerrariRomaMobile}
+          src={images.FerrariRomaMobile}
           alt=""
           className="absolute pointer-events-none z-10 bottom-0 hidden max-md:flex -right-6"
         />

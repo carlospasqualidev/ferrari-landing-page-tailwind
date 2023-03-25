@@ -1,27 +1,27 @@
-import { svgs } from '@/assets';
+import { images } from '@/assets';
 import { ArticleCard } from '@/components';
 
 const articlesData = [
   {
-    image: svgs.FerrariMouseum,
+    image: images.FerrariMouseum,
     title: 'FERRARI MARANELLO',
     description:
       'The Ferrari Museums offer visitors a unique and engaging opportunity to relive the history of the Prancing Horse and its founder.',
   },
   {
-    image: svgs.SnowAngels,
+    image: images.SnowAngels,
     title: 'SNOW ANGELS ',
     description:
       'The latest Corso Pilota Classiche offered a spectacular chance to drive some of the beautiful Prancing Horses in history on ‘The ice’ – the St Moritz international Concours of Elegance',
   },
   {
-    image: svgs.SnowAngels,
+    image: images.SnowAngels,
     title: 'SNOW ANGELS ',
     description:
       'The latest Corso Pilota Classiche offered a spectacular chance to drive some of the beautiful Prancing Horses in history on ‘The ice’ – the St Moritz international Concours of Elegance',
   },
   {
-    image: svgs.SnowAngels,
+    image: images.SnowAngels,
     title: 'SNOW ANGELS ',
     description:
       'The latest Corso Pilota Classiche offered a spectacular chance to drive some of the beautiful Prancing Horses in history on ‘The ice’ – the St Moritz international Concours of Elegance',

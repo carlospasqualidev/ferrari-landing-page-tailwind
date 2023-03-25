@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { svgs } from '@/assets';
+import { images } from '@/assets';
 import { ArrowButton, NewsCard } from '@/components';
 
 const newsData = [
@@ -46,7 +46,7 @@ export function F1() {
         <ArrowButton label="Scoprire" variant="white" />
       </div>
       <Image
-        src={svgs.F1}
+        src={images.F1}
         alt=""
         sizes=""
         className="object-cover pointer-events-none"
@@ -59,7 +59,7 @@ export function SF90() {
   return (
     <div className="w-full relative">
       <Image
-        src={svgs.FerrariSF90}
+        src={images.FerrariSF90}
         alt=""
         className="absolute -right-12 bottom-0 z-10 pointer-events-none"
       />

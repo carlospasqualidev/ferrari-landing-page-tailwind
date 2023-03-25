@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { images, svgs } from '@/assets';
+import { images } from '@/assets';
 import { ArrowButton } from '@/components';
 
 export interface ICheckbox {
@@ -17,12 +17,19 @@ function Checkbox({ label }: ICheckbox) {
 
 export const Contact = () => {
   return (
-    <div className="w-full bg-[#F6F6F6] h-[540px] flex flex-col relative p-8 items-end gap-16 max-md:h-fit">
+    <div className="w-full bg-[#F6F6F6] h-[540px] flex flex-col relative p-8 items-end gap-16 max-md:h-[900px]">
       <Image
-        src={svgs.FerrariImage2}
+        src={images.FerrariImage2}
         alt=""
         sizes=""
         className=" -left-[48px] absolute pointer-events-none bottom-14 max-md:hidden"
+      />
+
+      <Image
+        src={images.FerrariImage2Mobile}
+        alt=""
+        sizes=""
+        className=" hidden max-md:flex absolute bottom-0 -right-6"
       />
 
       <h3 className="text-4xl font-bold w-full flex justify-end max-md:text-center">
@@ -45,12 +52,6 @@ export const Contact = () => {
         </div>
         <ArrowButton label="Inscrivit" />
       </div>
-      <Image
-        src={images.FerrariImage2Mobile}
-        alt=""
-        sizes=""
-        className=" hidden max-md:flex -mt-32"
-      />
     </div>
   );
 };
