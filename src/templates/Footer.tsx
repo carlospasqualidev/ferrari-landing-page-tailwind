@@ -52,7 +52,20 @@ export function Footer() {
         20.260.000
       </p>
       <p className="text-[#999999] text-base text-center">
-        Copyright 2023 - All rights reserved
+        Copyright 2023 - Development by{' '}
+        <a
+          href="https://carlospasqualidev.vercel.app"
+          className="hover:text-[#FCFCFC] transition-all "
+        >
+          Carlos Pasquali
+        </a>{' '}
+        & Design by{' '}
+        <a
+          href="https://www.behance.net/lauraventurinim"
+          className="hover:text-[#FCFCFC] transition-all "
+        >
+          Laura Venturini Minotto
+        </a>
       </p>
 
       <div className="flex justify-center items-center gap-4 max-md:grid max-md:grid-cols-2">
